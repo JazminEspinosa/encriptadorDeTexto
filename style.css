@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-primario: #352f44;
+  --color-secundario: #5c5470;
+  --color-terciario: #b9b4c7;
+  --color-fuentes: #faf0e6;
+
+  --fuente: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primario);
+  color: var(--color-fuentes);
+  font-family: var(--fuente);
+}
+
+header {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  justify-content: flex-start; /* Alinea los elementos en la esquina izquierda */
+  height: 100px; /* Ejemplo de altura para el header */
+  padding: 10px; /* Añade padding si es necesario */
+}
+
+header img {
+  width: 100px; /* Ajusta el tamaño del logo según necesites */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-left: 80px;
+}
+.contenido {
+  background-color: var(--color-primario);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15%;
+}
+.contenido__texto__input {
+  width: 50%;
+  font-family: var(--fuente);
+  font-size: 32px;
+  background: none;
+  border: transparent;
+}
+
+.contenido__texto__input:focus {
+  outline: none;
+}
+
+.contenido__texto__y__botones {
+  display: flex;
+  flex-direction: column;
+  gap: 300px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.contenido__botones {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.boton__encriptar {
+  color: var(--color-terciario);
+  border-radius: 16px;
+  gap: 24px;
+  font-family: var(--fuente);
+  font-size: 16px;
+  text-align: center;
+  width: 328px;
+  height: 45px;
+  background: var(--color-primario);
+  border: 1px solid #b9b4c7;
+}
+
+.boton__encriptar:hover {
+  background-color: var(--color-terciario);
+  color: var(--color-primario);
+}
+
+.boton__desencriptar {
+  color: var(--color-primario);
+  border-radius: 16px;
+  gap: 24px;
+  font-family: var(--fuente);
+  font-size: 16px;
+  text-align: center;
+  border: var(--color-secundario);
+  width: 328px;
+  height: 45px;
+  background: var(--color-terciario);
+  /*display: none;*/
+}
+
+.boton__desencriptar:hover {
+  background-color: var(--color-fuentes);
+}
+
+.contenido__texto__input {
+  color: var(--color-fuentes);
+  font-family: var(--fuente);
+  fill: transparent;
+}
+
+.rectangulo {
+  display: flex;
+  background: var(--color-terciario);
+  width: 400px;
+  height: 850px;
+  /*width: 50%;
+  height: 100;*/
+  border-radius: 32px;
+  border-color: solid var(--color-fuentes);
+  flex-direction: column-reverse;
+  margin-right: 150px;
+  gap: 4px;
+  justify-content: flex;
+  position: relative;
+}
+
+.mostrarTexto {
+  font-family: var(--fuente);
+  color: var(--color-primario);
+  font-size: 32px;
+  background-color: none;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  align-items: center;
+}
+
+.boton__copiar {
+  color: var(--color-terciario);
+  border-radius: 16px;
+  font-family: var(--fuente);
+  font-size: 16px;
+  text-align: center;
+  border: var(--color-secundario);
+  width: 328px;
+  height: 45px;
+  align-self: center;
+  background: var(--color-primario);
+  margin-bottom: 30px;
+  /*display: none;*/
+}
+.boton__copiar:hover {
+  background-color: var(--color-secundario);
+  color: var(--color-fuentes);
+}
+
+@media (max-width: 1400px) {
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+
+.contenido__texto__y__botones{
+  margin-bottom: 5%;
+}
