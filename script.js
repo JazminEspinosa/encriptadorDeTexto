@@ -26,6 +26,11 @@ if (errorMensaje== true) {
 */
 
 
+function FocusOnInput()
+{
+document.getElementById("elTexto").focus();
+}
+
 
 
 
